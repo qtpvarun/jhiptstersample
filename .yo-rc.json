@@ -1,0 +1,44 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.jgd.sms"
+    },
+    "jhipsterVersion": "6.3.1",
+    "applicationType": "monolith",
+    "baseName": "studentmanagementsystem",
+    "packageName": "com.jgd.sms",
+    "packageFolder": "com/jgd/sms",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "gradle",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "YTc3YmZjOTM1ZmQwOGZhYzAwYzIyOTQxZTFkNGM3Y2UyNWMzOTVmMzE1YWNkMjcyN2NjZjllZTg5MGUzYmRmNWZlOWRhZjljZGMyYThjNzYxMTdkNmVjZjk5ZDgzYzg1ZWQxMDJkMWU3MDM5ODgzMGJkNDk1NjQ1ZmI1N2FhOGE=",
+    "embeddableLaunchScript": false,
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "react",
+    "clientTheme": "simplex",
+    "clientThemeVariant": "primary",
+    "testFrameworks": ["gatling", "cucumber", "protractor"],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [
+      {
+        "name": "generator-jhipster-docker",
+        "version": "2.5.0"
+      }
+    ],
+    "enableTranslation": false,
+    "blueprints": []
+  }
+}
