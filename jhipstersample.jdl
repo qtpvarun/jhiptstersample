@@ -1,20 +1,17 @@
-
-
-
 entity Course {
     name String required
     description String
 }
 entity Student {
-    name String required
-    description String
+    firstName String required
+    lastName String
 }
 entity Passport {
     number String
 }
 entity Review {
-    number String
-    rating Int
+    rating Integer
+    subject String
     description String
 }
 

@@ -1,0 +1,64 @@
+application {
+  config {
+    databaseType sql
+    devDatabaseType mysql
+    enableHibernateCache true
+    enableSwaggerCodegen false
+    enableTranslation false
+    jhiPrefix jhi
+    languages [en, fr]
+    messageBroker false
+    nativeLanguage en
+    packageName com.jgd.sms
+    prodDatabaseType mysql
+    searchEngine false
+    serviceDiscoveryType false
+    skipClient false
+    skipServer false
+    testFrameworks [gatling, cucumber, protractor]
+    websocket false
+    applicationType monolith
+    baseName studentmanagementsystem
+    serverPort 8080
+    authenticationType jwt
+    cacheProvider ehcache
+    buildTool gradle
+    useSass true
+    clientPackageManager npm
+    clientFramework react
+    clientTheme simplex
+    clientThemeVariant primary
+    dtoSuffix DTO
+    skipUserManagement false
+  }
+
+  entities Course, Passport, Review, Student
+}
+
+entity Course {
+  name String required,
+  description String
+}
+entity Passport {
+  number String
+}
+entity Review {
+  number String,
+  rating Integer,
+  description String
+}
+entity Student {
+  name String required,
+  description String
+}
+relationship OneToOne {
+  Student{passport} to Passport{student}
+}
+relationship OneToMany {
+  Course{review} to Review{course},
+  Student{review} to Review{student}
+}
+relationship ManyToMany {
+  Student{course} to Course{student}
+}
+
